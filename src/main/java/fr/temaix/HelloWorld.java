@@ -6,6 +6,6 @@ package fr.temaix;
 public class HelloWorld {
 
     public static void main(String[] args) {
-        System.out.println("Hello World on branch develop.");
+        System.out.println("Hello World on branch develop");
     }
 }
