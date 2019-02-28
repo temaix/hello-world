@@ -14,10 +14,10 @@ services:
       POSTGRES_PASSWORD: etraffic
       POSTGRES_DB: bdd
 
-  mongodb:
-    image: mongo:latest
-    container_name: "mongodb"
-    ports:
-      - "27017:27017"
-    environment:
-      MONGO_INITDB_DATABASE: eTraffic
+  #mongodb:
+   # image: mongo:latest
+    #container_name: "mongodb"
+    #ports:
+     # - "27017:27017"
+    #environment:
+     # MONGO_INITDB_DATABASE: eTraffic
