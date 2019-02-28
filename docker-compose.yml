@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: "postgres"
+    ports:
+      - "5432:5432"
+    #volumes:
+      #- /Users/yann/Projets/Temaix/docker/poc-postgres/data:/var/lib/postgresql/data
+      #- ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      POSTGRES_USER: etraffic
+      POSTGRES_PASSWORD: etraffic
+      POSTGRES_DB: bdd
+
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: eTraffic
